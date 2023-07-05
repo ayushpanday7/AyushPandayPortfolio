@@ -4,22 +4,62 @@
     padding: 0;
 }
 
+html, body {
+    overflow: hidden;
+  }
+  
+  #preloader {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bar {
+    width: 40vw;
+    height: 5vh;
+    border: 2px solid #ffb7b7;
+    border-radius: 6px;
+    padding: 0px;
+    line-height: 120px;
+    overflow: hidden;
+  }
+  .progress
+  {
+    width: 0vw;
+    height: 5vh;
+    border: none;
+    background-color: #f00;
+    padding: 0px;
+    line-height: 120px;
+    animation: loading 2s linear infinite;
+  }
+  
+  @keyframes loading {
+    40% { 
+        transform:translateX(0vw);
+        width: 40vw; 
+    }
+    90% { 
+        transform:translateX(45vw);
+        width: 0px;
+    }
+    100%{
+        transform: translateX(50vw);
+    }
+  }
+  
 .container {
     display: flex;
 }
-.navtoolbtn{
-    display: flex;
-    position: absolute;
-    font-size: 30px;
-    background-color: transparent;
-    cursor: pointer;
-}
-.open{
-    transform: rotate(45deg);
-}
 
-.close{
-}
 
 .sidebar {
     height: 100vh;
