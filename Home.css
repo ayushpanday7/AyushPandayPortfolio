@@ -179,7 +179,7 @@ html, body {
         right: 30vw;
         width: 40vw;
         height: auto;
-        position: absolute;
+        position: fixed;
     }
     .hidesidebar{
         position:absolute;
@@ -189,12 +189,13 @@ html, body {
         transition-duration: 1s;
     }
     .devInfo div{
-        font-size: 15px;
+        font-size: 18px;
         text-align: center;
         width: 100%;
     }
     .devInfo{
         justify-content: flex-end;
         height: 78vh;
+        margin-top: 15vh;
     }
 }
