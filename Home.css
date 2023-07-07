@@ -103,10 +103,9 @@ html, body {
     justify-content: space-around;
     display: flex;
     background-color: #fff;
-    height: 60vh;
+    height: 100vh;
     width: 80vw;
     margin: auto;
-    margin-top: 14vh;
     color: aliceblue;
 }
 
@@ -116,9 +115,11 @@ html, body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    font-size: 20px;
 }
 
 #photo {
+    margin-top: 17vh;
     border-radius: 20px;
     height: 60vh;
     float: left;
@@ -128,19 +129,21 @@ html, body {
     text-align: center;
 }
 .intro {
-    font-size: 60px;
+    font-size: 3em;
     font-family: 'source code pro',monospace;
 }
 
 .name {
-    font-size: 50px;
+    font-size: 2.5em;
     font-weight: bold;
     font-family: sans-serif;
 }
 .about
 {
+    text-align: center;
     width: 40vw;
     font-family: 'source code pro',monospace;
+    font-size: 0.85em;
 }
 
 .displayButton {
@@ -169,11 +172,29 @@ html, body {
 
 @media (max-width:1000px)
 {
+    #photo{
+        margin-top: 0px;
+        top: 5vh;
+        left: 30vw;
+        right: 30vw;
+        width: 40vw;
+        height: auto;
+        position: absolute;
+    }
     .hidesidebar{
         position:absolute;
         width: 15vw;
         transform:translateX(-500px);
         transition-timing-function: ease-in;
         transition-duration: 1s;
+    }
+    .devInfo div{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .devInfo{
+        justify-content: flex-end;
+        height: 78vh;
     }
 }
