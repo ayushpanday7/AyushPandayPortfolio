@@ -4,9 +4,7 @@
     padding: 0;
 }
 
-html, body {
-    overflow: hidden;
-  }
+
   
   #preloader {
     text-align: center;
@@ -194,7 +192,6 @@ html, body {
         width: 100%;
     }
     .devInfo{
-        justify-content: flex-end;
         height: 78vh;
         margin-top: 15vh;
     }
