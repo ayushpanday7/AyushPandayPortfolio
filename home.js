@@ -3,12 +3,6 @@ window.addEventListener('load', function() {
   preloader.style.display = 'none';
   document.body.style.overflow = 'visible';
 });
-function showSideBar(){
-  document.querySelector(".hide").style = "display:none";
-    setTimeout(() => {
-      document.querySelector(".show").style = "display:flex;";
-    }, 900); 
-}
 window.matchMedia('(max-width: 1000px)').addEventListener('change', (event) => {
   if (event.matches) {
     document.querySelector(".sidebar").classList.add("hidesidebar");
@@ -16,9 +10,7 @@ window.matchMedia('(max-width: 1000px)').addEventListener('change', (event) => {
     document.querySelector(".show").style.display = "flex";
   } else {
     document.querySelector(".sidebar").classList.remove("hidesidebar");
-    setTimeout(() => {
-      document.querySelector(".hide").style = "display:flex;";
-    }, 1000); 
+    document.querySelector(".hide").style.display = "flex";
     document.querySelector(".show").style.display = "none";
   }
 });
