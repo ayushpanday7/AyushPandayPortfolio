@@ -5,7 +5,7 @@
 }
 
 html, body {
-    font-size: 1.025vw;
+    overflow: hidden;
   }
   
   #preloader {
@@ -75,7 +75,7 @@ html, body {
     overflow: hidden;
     transition-duration: 1000ms;
     height: 100vh;
-    width: 25rem;
+    width: 450px;
     background-color: rgb(31, 27, 48);
 }
 
@@ -107,8 +107,10 @@ html, body {
 }
 
 .hidesidebar{
-    width:0px;
-    background-color: red;
+    transform:translateX(-250px);
+}
+.main {
+    width: 100%;
 }
 
 
@@ -116,8 +118,9 @@ html, body {
     display: flex;
     background-color: #fff;
     height: 60vh;
+    width: 80vw;
     margin: auto;
-    margin-top: 10rem;
+    margin-top: 14vh;
     color: aliceblue;
 }
 
@@ -126,32 +129,34 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 8rem;
+    height: 100%;
 }
 
 #photo {
-    border-radius: 2rem;
-    height: 23rem;
-    margin-left: 3rem;
+    border-radius: 20px;
+    height: 60vh;
+    float: left;
 }
 .devInfo div
 {
     text-align: center;
 }
 .intro {
-    font-size: 6rem;
+    font-size: 60px;
     font-family: 'source code pro',monospace;
 }
 
 .name {
-    font-size: 5rem;
+    font-size: 50px;
     font-weight: bold;
     font-family: sans-serif;
 }
 .about
 {
+    text-align: center;
     width: 40vw;
     font-family: 'source code pro',monospace;
+    font-size: 0.85em;
 }
 
 .displayButton {
@@ -173,26 +178,15 @@ html, body {
     color: #fff;
 }
 
-@media (max-width: 1000px) {
-    html,body{
-        font-size: 12px;
-    }
-    .sidebar{
-        position: fixed;
-    }
-    .devInfo{
-        margin-top: 5rem;
-        margin-left: 0.3rem;
-        flex-direction: column-reverse;
-    }
-    .intro{
-        font-size: 4em;
-    }
-    .about{
-        width: 100%;
-        padding: 2rem;
-    }
-    .infoContainer{
-        margin-top: 10rem;
+
+
+/* 
+    Making it more responsive
+*/
+
+@media (max-width:41px)
+{
+    #photo{
+        height: 30px;
     }
 }
