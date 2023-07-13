@@ -185,4 +185,7 @@ form div
     .inputBox{
         width: 30rem;
     }
+    .submitBtn{
+        margin-left: 5rem;
+    }
 }
