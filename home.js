@@ -1,3 +1,6 @@
+console.log("Java Script is sucessfully Connected"); // for testing linking of file
+
+
 window.addEventListener('load', function() {
   var preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
