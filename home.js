@@ -1,11 +1,9 @@
-console.log("Java Script is sucessfully Connected"); // for testing linking of file
-
-
 window.addEventListener('load', function() {
   var preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
   document.body.style.overflow = 'visible';
 });
+function checkScreenSize(){
 window.matchMedia('(max-width: 1000px)').addEventListener('change', (event) => {
   if (event.matches) {
     document.querySelector(".sidebar").classList.add("hidesidebar");
@@ -17,6 +15,9 @@ window.matchMedia('(max-width: 1000px)').addEventListener('change', (event) => {
     document.querySelector(".show").style.display = "none";
   }
 });
+}
+checkScreenSize();
+window.matchMedia('(max-width: 1000px)').addEventListener('change', checkScreenSize);
 document.querySelector(".hamburger").addEventListener("click",()=>{
   var sidebar = document.querySelector(".sidebar").classList;
   sidebar.toggle("hidesidebar");
