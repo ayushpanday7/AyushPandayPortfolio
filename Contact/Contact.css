@@ -136,7 +136,7 @@ form div
 }
 .submitBtn{
     margin-top: 33px;
-    width: 70%;
+    width: 99%;
     height: 8vh;
     background-color: #fff;
     border: 2px solid red;
@@ -186,6 +186,5 @@ form div
         width: 30rem;
     }
     .submitBtn{
-        margin-left: 5rem;
     }
 }
