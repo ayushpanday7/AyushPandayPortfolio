@@ -2,6 +2,8 @@ window.addEventListener('load', function() {
   var preloader = document.getElementById('preloader');
   preloader.style.display = 'none';
   document.body.style.overflow = 'visible';
+  this.document.querySelector(".sidebar").style = "Display:block";
+  this.document.querySelector(".hide").style = "Display:flex";
 });
 window.matchMedia('(max-width: 1000px)').addEventListener('change', (event) => {
   if (event.matches) {

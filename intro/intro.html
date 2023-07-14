@@ -9,19 +9,48 @@
 </head>
 
 <body>
+
+    <!-- Starting Preloding code -->
+
+    <div id="preloader">
+        <div id="loader">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ending Preloding code -->
+
+
+
     <div class="container">
+
+        <!-- Sidebar -->
+
         <div class="sidebar">
             <nav>
                 <ul>
-                    <li><a href="/PortFolioWeb/Home/index.html">Home</a></li>
-                    <li><a href="/PortFolioWeb/intro/intro.html">Intro</a></li>
-                    <li><a href="/PortFolioWeb/Services/Services.html">Services</a></li>
-                    <li><a href="/PortFolioWeb/Contact/Contact.html">Contact-Me</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="intro/intro.html">Intro</a></li>
+                    <li><a href="Services/Services.html">Services</a></li>
+                    <li><a href="">Contact-Me</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Hamburger for sidebar -->
+
+        <div class="hamburger">
+            <div class="hide Hamtool">↩️</div>
+            <div class="show Hamtool">↪️</div>
+        </div>
+
+
+        <!-- end of sidebar -->
         <div class="main">
             <div class="intro">
+                <img src="../Images/dev.jpg" alt="Ayush Panday" class="images">
                 <div class="display">
                     <div class="hallo">
                         Hi, My name is
@@ -29,20 +58,18 @@
                     <div class="name">
                         Ayush Panday
                     </div>
-                    <div class="links">
-                        <div><a href="" target="_blank" class="fb"><button>Java</button></a>
-                            <a href="" target="_blank" class="linkedin"><button>C and C++</button></a>
-                            <a href="" target="_blank" class="fb"><button>HtML</button></a>
-                            <a href="" target="_blank" class="linkedin"><button>CSS</button></a>
-                            <a href="" target="_blank" class="linkedin"><button>DSA</button></a>
-                        </div>
+                    <div class="about">
+                        I am a student of BCA - [Bachelor of Computer Application] with a good knowledge of C and C++. I
+                        have learned data structures and algorithms in C++ language and I am also familiar with Java,
+                        Python, HTML, JavaScript and CSS. I started learning coding in the eighth grade but I got proper
+                        direction in my first semester. Since then, I have been building my logic and improving my
+                        skills.
                     </div>
-                    <div class="scinfo" style="color: grey;margin-top: 12px;">My Skills ⬆️</div>
                 </div>
-                <img src="ayush.jpg" alt="Ayush Panday" class="images">
             </div>
         </div>
     </div>
+    <script src="../home.js"></script>
 </body>
 
 </html>
