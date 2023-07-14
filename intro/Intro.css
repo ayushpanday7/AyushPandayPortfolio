@@ -149,7 +149,7 @@ body {
     padding: 2rem;
     text-align: center;
     display: flex;
-    background-color: #f0f8ff63;
+    background-color: #e7f4ff85;
     flex-direction: column;
 }
 
@@ -185,10 +185,6 @@ body {
         position: fixed;
     }
 
-    .display {
-        margin-top: 5rem;
-    }
-
     .images {
         /* display: none; */
 
@@ -200,7 +196,7 @@ body {
         object-fit: cover;
         z-index: -999;
         transition-duration: 500ms ;
-        filter: brightness(110%);
+        filter: brightness(110%) saturate(100%);
     }
 
     .display{
