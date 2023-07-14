@@ -193,28 +193,29 @@ body {
         /* display: none; */
 
         position: fixed;
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        height: 30%;
         object-fit: cover;
         z-index: -999;
         transition-duration: 500ms ;
-        filter: blur(2px) opacity(70%) brightness(70%);
+        filter: brightness(110%);
     }
 
-    .hallo {
-        font-size: 6rem;
-        margin-top: 8rem;
+    .display{
+        margin-top: 25rem;
     }
-
-    .hallo,
     .name {
         color: #0000a8;
         font-size: 3rem;
     }
 
     .about {
+        margin-top: 3rem;
         color: #000000;
         text-align: center;
         line-height: 2.4rem;
+        font-size: 1.5rem;
     }
 }
