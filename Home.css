@@ -42,6 +42,7 @@
 {
     width: 40vw;
     font-family: 'source code pro',monospace;
+    font-size: 2rem;
 }
 
 .displayButton {
@@ -64,14 +65,13 @@
 }
 
 @media (max-width: 1000px) {
-    html,body{
-        font-size: 150px;
+    :root{
+        font-size: 1.7vw;
     }
     .sidebar{
         position: fixed;
     }
     .devInfo{
-        margin-top: 5rem;
         margin-left: 0.3rem;
         flex-direction: column-reverse;
     }
@@ -80,6 +80,6 @@
         padding: 2rem;
     }
     .infoContainer{
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
 }
