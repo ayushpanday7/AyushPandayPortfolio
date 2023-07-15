@@ -1,118 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    font-size: 1.025vw;
-  }
-  
-  #preloader {
-    text-align: center;
+.backgroundImg{
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    z-index: -99999;
     height: 100%;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .bar {
-    width: 40vw;
-    height: 5vh;
-    border: 0.2rem solid #ffb7b7;
-    border-radius: 0.6rem;
-    padding: 0px;
-    line-height: 12rem;
-    overflow: hidden;
-  }
-  .progress
-  {
-    width: 0vw;
-    height: 5vh;
-    border: none;
-    background-color: #f00;
-    padding: 0px;
-    line-height: 12rem;
-    animation: loading 2s linear infinite;
-  }
-  
-  @keyframes loading {
-    40% { 
-        transform:translateX(0vw);
-        width: 40vw; 
-    }
-    90% { 
-        transform:translateX(45vw);
-        width: 0px;
-    }
-    100%{
-        transform: translateX(50vw);
-    }
-  }
-  
-.container {
-    display: flex;
-}
-
-.Hamtool{
-    position: absolute;
-    font-size: 2em;
-    margin-top: 0.3em;
-}
-.show{
-    display: none;
-    left:0.3em
-}
-.hide{
-    left: 10.5em;
-}
-.sidebar {
-    overflow: hidden;
-    transition-duration: 1000ms;
-    height: 100vh;
-    width: 25rem;
-    background-color: rgb(31, 27, 48);
-}
-
-.sidebar nav {
-    color: #fff;
-    padding-top: 4rem;
-}
-
-.sidebar nav li {
-    text-align: center;
-    list-style: none;
-    font-size: 2rem;
     width: 100%;
-    transition-duration: 800ms;
+    filter: brightness(50%);
 }
-.sidebar nav a
-{
-    padding: 3rem 0;
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-.sidebar nav a:hover
-{
-    color: #000;
-}
-.sidebar nav li:hover{
-    background-color: #ffffff;
-}
-
-.hidesidebar{
-    width:0px;
-    background-color: red;
-}
-
-.main {
-    margin: auto;
+.contactInfo{
+    margin-top: 5rem;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
 }
 form{
     display: flex;
@@ -120,12 +18,13 @@ form{
     justify-content: center;
 }
 h1{
+    color: white;
     font-family: 'source code pro',monospace;
     font-size: 50px;
 }
 .Disclimer{
+    color: white;
     font-size: 15px;
-    color: rgb(75, 75, 75);
     margin-left: 30px;
 }
 form div
@@ -136,7 +35,7 @@ form div
 }
 .submitBtn{
     margin-top: 33px;
-    width: 99%;
+    width: 40.5rem;
     height: 8vh;
     background-color: #fff;
     border: 2px solid red;
@@ -150,22 +49,23 @@ form div
     color: #fff;
 }
 .inputBox{
-    width: 70%;
+    width: 40rem;
     outline: none;
     border-radius: 10px;
     font-size: 2.2vh;
     padding-left: 10px;
     height: 5vh;
     background-color: #fff;
-    border:2px solid blue;
+    border:2px solid #c1c6ff;
 }
 .message{
     margin-left: 1.2vw;
-    color: blue;
+    color: #c1c6ff;
+    font-size: 2rem;
 }
 .check{
     display: inline-block;
-    color: blue;
+    color: #c1c6ff;
 }
 #isClient{
     height: 15px;
@@ -183,6 +83,12 @@ form div
         padding: 12rem 18px;
     }
     .inputBox{
-        width: 30rem;
+        width: 29rem;
+    }
+    .submitBtn{
+        width: 30.5rem;
+    }
+    .message{
+        font-size: 3rem;
     }
 }

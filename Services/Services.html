@@ -5,159 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Panday - [Developer and Learner] </title>
-
-    <style>
-        .alertMessage {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            width: 100vw;
-            background-color: rgb(148, 148, 148);
-            position: fixed;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .message {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #ffffff;
-            font-family: sans-serif;
-            font-size: 15px;
-            text-align: center;
-            width: 31%;
-            padding: 20px;
-            border: none;
-            color: rgb(0, 0, 0);
-            border-radius: 13px;
-        }
-
-        .ok {
-            margin-top: 10px;
-            width: fit-content;
-            padding: 10px;
-            border: 2px solid blue;
-            color: blue;
-            border-radius: 9px;
-            float: right;
-            height: 40px;
-            cursor: pointer;
-            transition-duration: 1s;
-        }
-
-        .ok:hover {
-            background-color: red;
-            color: rgb(243, 243, 255);
-            border-color: red;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .service {
-            margin-bottom: 30px;
-        }
-
-        .service h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .service p {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .service-icon {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            line-height: 50px;
-            font-size: 24px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="Services.css">
+    <link rel="stylesheet" href="../CommenCss.css">
 </head>
 
 <body>
-    <div class="alertMessage" id="message">
-        <div class="message">
-            All content in this page is just for skill testing. We do not have any community or group to develop software.
-            <button class="ok" onclick="next()">Continue</button>
+
+    <!-- Starting Preloding code -->
+
+    <div id="preloader">
+        <div id="loader">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
         </div>
     </div>
-    <div class="naviation">
-        <a href="/PortFolioWeb/Home/index.html"><button class="cta-button" style="cursor: pointer;">Home</button></a>
-    </div>
-    <hr>
+
+    <!-- ending Preloding code -->
+
+
+
     <div class="container">
-        <div class="service">
-            <h2>HTML</h2>
-            <p>We offer professional HTML development services to create beautiful and responsive websites.</p>
-            <a href="#" class="cta-button">Learn More</a>
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="intro/intro.html">Intro</a></li>
+                    <li><a href="Services/Services.html">Services</a></li>
+                    <li><a href="">Contact-Me</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <div class="service">
-            <h2>CSS</h2>
-            <p>Our CSS experts can help you style your web pages and enhance the overall visual appeal of your website.
-            </p>
-            <a href="#" class="cta-button">Learn More</a>
+        <!-- Hamburger for sidebar -->
+
+        <div class="hamburger">
+            <div class="hide Hamtool">↩️</div>
+            <div class="show Hamtool">↪️</div>
         </div>
 
-        <div class="service">
-            <h2>Java</h2>
-            <p>We provide Java development services for building robust and scalable applications across various
-                domains.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
 
-        <div class="service">
-            <h2>Data Structures and Algorithms</h2>
-            <p>Our team of experienced professionals can assist you in optimizing your code using efficient data
-                structures and algorithms.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </div>
+        <!-- end of sidebar -->
 
-        <div class="service">
-            <h2>C and C++</h2>
-            <p>With our C and C++ development services, we can help you create high-performance software applications.
-            </p>
-            <a href="#" class="cta-button">Learn More</a>
+        <hr>
+        <div class="serviceContainer">
+            <div class="service">
+                <h2>HTML</h2>
+                <p>We offer professional HTML development services to create beautiful and responsive websites.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service">
+                <h2>CSS</h2>
+                <p>Our CSS experts can help you style your web pages and enhance the overall visual appeal of your
+                    website.
+                </p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service">
+                <h2>Java</h2>
+                <p>We provide Java development services for building robust and scalable applications across various
+                    domains.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service">
+                <h2>Data Structures and Algorithms</h2>
+                <p>Our team of experienced professionals can assist you in optimizing your code using efficient data
+                    structures and algorithms.</p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
+
+            <div class="service">
+                <h2>C and C++</h2>
+                <p>With our C and C++ development services, we can help you create high-performance software
+                    applications.
+                </p>
+                <a href="#" class="cta-button">Learn More</a>
+            </div>
         </div>
     </div>
+    <script src="../home.js"></script>
     <script>
         var box = document.getElementById("message");
         document.querySelector('.ok').addEventListener('click', function () {

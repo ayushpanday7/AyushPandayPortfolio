@@ -12,7 +12,6 @@ body {
 
 #preloader {
     text-align: center;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -64,6 +63,7 @@ body {
 }
 
 .Hamtool {
+    cursor: pointer;
     position: absolute;
     font-size: 2em;
     margin-top: 0.3em;
@@ -80,7 +80,8 @@ body {
 }
 
 .sidebar {
-    position: fixed;
+    left: 0px;
+    top: 0px;
     display: none;
     overflow: hidden;
     transition-duration: 1000ms;
@@ -121,66 +122,6 @@ body {
     width: 0px;
     background-color: red;
 }
-
-.main {
-    justify-content: center;
-    display: flex;
-}
-
-.intro {
-    width: 100vw;
-    display: flex;
-    font-family: 'source code pro', sans-serif;
-}
-
-.intro div {
-    width: 90%;
-    margin-right: 1rem;
-}
-
-.hallo {
-    font-size: 4rem;
-    color: #ff00d9;
-}
-
-.display {
-    margin-left: 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem red;
-    border: 1px solid grey;
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    background-color: #ffffff85;
-    flex-direction: column;
-}
-
-.name {
-    color: #0000ff;
-    font-size: 4rem;
-    font-family: sans-serif;
-}
-
-.images {
-    height: 46rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem gray;
-    cursor: pointer;
-    transition-duration: 500ms;
-}
-
-.about {
-    font-size: 2.1rem;
-    margin-top: 2rem;
-    color: #ff0000;
-    letter-spacing: 0.3rem;
-    font-family: serif;
-    text-align: center;
-    line-height: 3rem;
-}
-
-@media (max-width: 1000px) {
-
-    html,
-    body {
-        font-size: 12px;
-    }
+.main{
+    width: 72.56rem;
 }

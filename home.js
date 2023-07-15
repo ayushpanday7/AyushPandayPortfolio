@@ -3,9 +3,9 @@ window.addEventListener('load', function() {
   preloader.style.display = 'none';
   document.body.style.overflow = 'visible';
   this.document.querySelector(".sidebar").style = "Display:block";
-  this.document.querySelector(".hide").style = "Display:flex";
 });
-window.matchMedia('(max-width: 1000px)').addEventListener('change', (event) => {
+let mediaQuery = window.matchMedia('(max-width: 1000px)');
+function handleMediaQueryChange(event) {
   if (event.matches) {
     document.querySelector(".sidebar").classList.add("hidesidebar");
     document.querySelector(".hide").style.display = "none";
@@ -15,7 +15,9 @@ window.matchMedia('(max-width: 1000px)').addEventListener('change', (event) => {
     document.querySelector(".hide").style.display = "flex";
     document.querySelector(".show").style.display = "none";
   }
-});
+}
+handleMediaQueryChange(mediaQuery);
+mediaQuery.addEventListener('change', handleMediaQueryChange);
 document.querySelector(".hamburger").addEventListener("click",()=>{
   var sidebar = document.querySelector(".sidebar").classList;
   sidebar.toggle("hidesidebar");
