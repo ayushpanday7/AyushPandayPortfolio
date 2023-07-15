@@ -134,4 +134,11 @@ body {
     .sidebar{
         position: fixed;
     }
+    .show,
+    .hide{
+        font-size: 4rem;
+    }
+    .hide{
+        left: 19rem;
+    }
 }
