@@ -71,12 +71,12 @@ body {
 
 .show {
     display: none;
-    left: 0.3em
+    left: 0.3rem
 }
 
 .hide {
     display: none;
-    left: 10.5em;
+    left: 21.5rem;
 }
 
 .sidebar {
@@ -124,4 +124,13 @@ body {
 }
 .main{
     width: 72.56rem;
+}
+
+@media (max-width: 1000px) {
+    :root{
+        font-size: 1.7vw;
+    }
+    .sidebar{
+        position: fixed;
+    }
 }

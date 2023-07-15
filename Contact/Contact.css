@@ -73,12 +73,6 @@ form div
 }
 
 @media (max-width: 1000px) {
-    html,body{
-        font-size: 12px;
-    }
-    .sidebar{
-        position: fixed;
-    }
     .main{
         padding: 12rem 18px;
     }

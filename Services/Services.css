@@ -4,6 +4,13 @@ body {
     background-color: #f2f2f2;
 }
 
+.alert {
+    color: red;
+    font-size: 10px;
+    margin-top: 20px;
+    z-index: 0;
+}
+
 .serviceContainer {
     max-width: 800px;
     margin: 0 auto;
@@ -27,20 +34,8 @@ body {
     margin-bottom: 20px;
 }
 
-.service-icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
 
-.cta-button {
+.learnMore {
     display: inline-block;
     padding: 12px 20px;
     background-color: #333;
@@ -50,19 +45,8 @@ body {
     transition: background-color 0.3s;
 }
 
-.cta-button:hover {
+.learnMore {
     background-color: #555;
 }
 
 
-@media (max-width: 1000px) {
-
-    html,
-    body {
-        font-size: 12px;
-    }
-
-    .sidebar {
-        position: fixed;
-    }
-}

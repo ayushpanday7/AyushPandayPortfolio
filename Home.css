@@ -65,12 +65,6 @@
 }
 
 @media (max-width: 1000px) {
-    :root{
-        font-size: 1.7vw;
-    }
-    .sidebar{
-        position: fixed;
-    }
     .devInfo{
         margin-left: 0.3rem;
         flex-direction: column-reverse;

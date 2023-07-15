@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Panday - [Developer and Learner] </title>
     <link rel="stylesheet" href="Intro.css">
+    <link rel="stylesheet" href="../CommenCss.css">
 </head>
 
 <body>
@@ -28,13 +29,13 @@
 
         <!-- Sidebar -->
 
-        <div class="sidebar">
+        <div class="sidebar hidesidebar">
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="intro/intro.html">Intro</a></li>
-                    <li><a href="Services/Services.html">Services</a></li>
-                    <li><a href="">Contact-Me</a></li>
+                    <li><a href="">Intro</a></li>
+                    <li><a href="../Services/Services.html">Services</a></li>
+                    <li><a href="../Contact/Contact.html">Contact-Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -67,6 +68,14 @@
         </div>
     </div>
     <script src="../home.js"></script>
+    <script>
+        window.addEventListener('load',function(){
+                document.querySelector(".sidebar").classList.add("hidesidebar");
+                document.querySelector(".hide").style.display = "none";
+                document.querySelector(".show").style.display = "flex";
+        });
+        handleMediaQueryChange(mediaQuery);
+    </script>
 </body>
 
 </html>
