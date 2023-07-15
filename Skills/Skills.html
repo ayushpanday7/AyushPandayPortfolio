@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Panday - [Developer and Learner] </title>
+    <link rel="stylesheet" href="Skills.css">
+    <link rel="stylesheet" href="../CommenCss.css">
+</head>
+
+<body>
+
+    <!-- Starting Preloding code -->
+
+    <div id="preloader">
+        <div id="loader">
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ending Preloding code -->
+
+
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../intro/intro.html">Intro</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="../Contact/Contact.html">Contact-Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Hamburger for sidebar -->
+
+        <div class="hamburger">
+            <div class="hide Hamtool">↩️</div>
+            <div class="show Hamtool">↪️</div>
+        </div>
+
+
+        <!-- end of sidebar -->
+
+        <hr>
+        <div class="SkillsContainer">
+            <div class="Skills">
+                <h2>C and C++</h2>
+                <p>With our C and C++ development Skills, we can help you create high-performance software
+                    applications and this is my primery Language.
+                </p>
+                <button href="#" class="LikeIt">Like It</button>
+            </div>
+            <div class="Skills">
+                <h2>HTML</h2>
+                <p>I offer decent HTML development Skills to create beautiful and responsive websites.</p>
+                <button href="#" class="LikeIt">Like It</button>
+            </div>
+
+            <div class="Skills">
+                <h2>CSS</h2>
+                <p>I offer my CSS style your web pages so that it enhance the overall visual appeal of your
+                    website.
+                </p>
+                <button href="#" class="LikeIt">Like It</button>
+            </div>
+
+            <div class="Skills">
+                <h2>Java</h2>
+                <p>I have some basic level of java which help me to learn faster in your orginazation (if required).</p>
+                <button href="#" class="LikeIt">Like It</button>
+            </div>
+
+            <div class="Skills">
+                <h2>Data Structures and Algorithms</h2>
+                <p>I have good knowledge of Array, Linked-list, stack, queue, tree and graph with their basic
+                    funcinality. this may help to
+                    optimize our projects.
+                </p>
+                <button href="#" class="LikeIt">Like It</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="../home.js"></script>
+    <script>
+        document.querySelectorAll(".LikeIt").forEach((likeIt) => {
+            likeIt.addEventListener("click", () => {
+                likeIt.classList.toggle("Liked");
+                if (likeIt.textContent == "👍Liked") {
+                    likeIt.textContent = "Like It";
+                }
+                else {
+                    likeIt.textContent = "👍Liked";
+                }
+            });
+        });
+    </script>
+</body>
