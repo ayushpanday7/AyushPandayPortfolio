@@ -1,18 +1,10 @@
-
-.main {
-    justify-content: center;
-    display: flex;
+.sidebar{
+    position: fixed;
 }
 
 .intro {
-    width: 100vw;
     display: flex;
     font-family: 'source code pro', sans-serif;
-}
-
-.intro div {
-    width: 90%;
-    margin-right: 1rem;
 }
 
 .hallo {
@@ -24,9 +16,8 @@
     margin-left: 1rem;
     box-shadow: 0.5rem 0.5rem 0.5rem red;
     border: 1px solid grey;
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
-    display: flex;
     background-color: #ffffff85;
     flex-direction: column;
 }
@@ -54,6 +45,7 @@
     text-align: justify;
     text-align-last: justify;
     line-height: 3rem;
+    width: 45rem;
 }
 
 @media (max-width: 711px) {
